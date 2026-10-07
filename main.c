@@ -3,7 +3,7 @@
 
 int main(void) {
     List list;
-
+    /*  now init the list  */
     list_init(&list);
 
     printf("Liste am Anfang:\n");

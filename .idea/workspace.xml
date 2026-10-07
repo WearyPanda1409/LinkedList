@@ -28,7 +28,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b480122-6802-4378-91ec-5af5aeff9e53" name="Changes" comment="" />
+    <list default="true" id="2b480122-6802-4378-91ec-5af5aeff9e53" name="Changes" comment="1st commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,6 +44,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "WearyPanda1409"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/WearyPanda1409/LinkedList.git",
+    "accountId": "845537e0-b934-4f04-a419-165c45fa17e8"
+  }
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../LinkedList/list.c" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../LinkedList/list.h" root0="FORCE_HIGHLIGHTING" />
@@ -161,6 +176,10 @@
     <isAutomaticFoundErrors value="true" />
     <isAutomaticReloadCMake value="true" />
     <isAutomaticBootstrapAfterUpdate value="false" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1st commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="1st commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
