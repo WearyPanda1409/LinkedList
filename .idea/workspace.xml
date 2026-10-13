@@ -28,11 +28,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b480122-6802-4378-91ec-5af5aeff9e53" name="Changes" comment="sauberer gemacht">
-      <change afterPath="$PROJECT_DIR$/doublelinkedlist.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doublelinkedlist.h" afterDir="false" />
+    <list default="true" id="2b480122-6802-4378-91ec-5af5aeff9e53" name="Changes" comment="idea entfernt durch ignore 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doublelinkedlist.c" beforeDir="false" afterPath="$PROJECT_DIR$/doublelinkedlist.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/list.c" beforeDir="false" afterPath="$PROJECT_DIR$/list.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/list.h" beforeDir="false" afterPath="$PROJECT_DIR$/list.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
@@ -88,7 +87,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "C/C++ File.main.c.executor": "Run",
-    "CMake Application.untitled.executor": "Debug",
+    "CMake Application.untitled.executor": "Run",
     "CMake Debug.LinkedList.executor": "Debug",
     "CidrDebugProfileConversion": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -113,6 +112,11 @@
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\elias\CLionProjects\untitled" />
+    </key>
+  </component>
   <component name="RunManager" selected="CMake Application.untitled">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
@@ -186,7 +190,9 @@
     <MESSAGE value="1st commit" />
     <MESSAGE value="added commentar" />
     <MESSAGE value="sauberer gemacht" />
-    <option name="LAST_COMMIT_MESSAGE" value="sauberer gemacht" />
+    <MESSAGE value="idea entfernt durch ignore" />
+    <MESSAGE value="idea entfernt durch ignore 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="idea entfernt durch ignore 2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

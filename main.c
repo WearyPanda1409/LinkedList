@@ -11,10 +11,10 @@ int main(void) {
 
     printf("\nPush:\n");
 
-    list_push(&list, 30);
-    list_push(&list, 20);
-    list_push(&list, 10);
-    list_append(&list, 9);
+    list_push(&list, 30.3);
+    list_push(&list, 20.4);
+    list_push(&list, 10.3);
+    list_append(&list, 9.1);
 
     list_print(&list);
 

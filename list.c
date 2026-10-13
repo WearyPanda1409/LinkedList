@@ -9,7 +9,7 @@ void list_init(List *list)
     list->size = 0;
 }
 
-void list_push(List *list, int value)
+void list_push(List *list, double value)
 {
     Node *new_node = malloc(sizeof(Node));
 
@@ -29,7 +29,7 @@ void list_push(List *list, int value)
     list->size++;
 }
 
-void list_append(List *list, int value)
+void list_append(List *list, double value)
 {
     Node *new_node = malloc(sizeof(Node));
 
@@ -52,7 +52,7 @@ void list_append(List *list, int value)
     list->size++;
 }
 
-int list_pop(List *list, int *value)
+int list_pop(List *list, double *value)
 {
     if (list->head == NULL) {
         return 0;
@@ -76,7 +76,7 @@ int list_pop(List *list, int *value)
     return 1;
 }
 
-int list_pop_back(List *list, int *value)
+int list_pop_back(List *list, double *value)
 {
     if (list->head == NULL) {
         return 0;
@@ -118,7 +118,7 @@ int list_pop_back(List *list, int *value)
     return 1;
 }
 
-int list_insert(List *list, size_t index, int value)
+int list_insert(List *list, size_t index, double value)
 {
     if (index > list->size) {
         return 0;
@@ -157,7 +157,7 @@ int list_insert(List *list, size_t index, int value)
     return 1;
 }
 
-int list_remove(List *list, size_t index, int *value)
+int list_remove(List *list, size_t index, double *value)
 {
     if (index >= list->size || list->head == NULL) {
         return 0;
@@ -192,7 +192,7 @@ int list_remove(List *list, size_t index, int *value)
     return 1;
 }
 
-int list_get(const List *list, size_t index, int *value)
+int list_get(const List *list, size_t index, double *value)
 {
     if (index >= list->size || value == NULL) {
         return 0;
@@ -242,7 +242,7 @@ void list_print(const List *list)
     printf("[");
 
     while (current != NULL) {
-        printf("%d", current->data);
+        printf("%lf", current->data);
 
         if (current->next != NULL) {
             printf(" -> ");
