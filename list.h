@@ -17,7 +17,9 @@ typedef struct {
 void list_init(List *list);
 
 void list_push(List *list, int value);
+
 void list_append(List *list, int value);
+
 int list_pop(List *list, int *value);
 int list_pop_back(List *list, int *value);
 int list_insert(List *list, size_t index, int value);

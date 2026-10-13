@@ -6,4 +6,6 @@ set(CMAKE_C_STANDARD 11)
 add_executable(untitled main.c
         list.c
         list.h
+        doublelinkedlist.c
+        doublelinkedlist.h
 )

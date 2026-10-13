@@ -14,6 +14,7 @@ int main(void) {
     list_push(&list, 30);
     list_push(&list, 20);
     list_push(&list, 10);
+    list_append(&list, 9);
 
     list_print(&list);
 
