@@ -9,12 +9,12 @@ void list_init(List *list)
     list->size = 0;
 }
 
-void list_push(List *list, double value)
+int list_push(List *list, double value)
 {
-    Node *new_node = malloc(sizeof(Node));
+    Node *new_node = malloc(sizeof *new_node);
 
     if (new_node == NULL) {
-        return;
+        return 0;
     }
 
     new_node->data = value;
@@ -27,21 +27,21 @@ void list_push(List *list, double value)
     }
 
     list->size++;
+    return 1;
 }
 
-void list_append(List *list, double value)
+int list_append(List *list, double value)
 {
-    Node *new_node = malloc(sizeof(Node));
+    Node *new_node = malloc(sizeof *new_node);
 
     if (new_node == NULL) {
-        return;
+        return 0;
     }
 
     new_node->data = value;
     new_node->next = NULL;
 
     if (list->tail == NULL) {
-        /* Liste ist leer */
         list->head = new_node;
         list->tail = new_node;
     } else {
@@ -50,6 +50,7 @@ void list_append(List *list, double value)
     }
 
     list->size++;
+    return 1;
 }
 
 int list_pop(List *list, double *value)
@@ -84,14 +85,12 @@ int list_pop_back(List *list, double *value)
 
     Node *current = list->head;
 
-    /* Nur ein Element */
     if (current->next == NULL) {
         if (value != NULL) {
             *value = current->data;
         }
 
         free(current);
-
         list->head = NULL;
         list->tail = NULL;
         list->size--;
@@ -99,7 +98,6 @@ int list_pop_back(List *list, double *value)
         return 1;
     }
 
-    /* Zum vorletzten Element laufen */
     while (current->next != list->tail) {
         current = current->next;
     }
@@ -111,32 +109,27 @@ int list_pop_back(List *list, double *value)
     free(list->tail);
 
     list->tail = current;
-    list->tail->next = NULL;
-
+    current->next = NULL;
     list->size--;
 
     return 1;
 }
 
-int list_insert(List *list, size_t index, double value)
+int list_insert(List *list, int index, double value)
 {
-    if (index > list->size) {
+    if (index < 0 || index > list->size) {
         return 0;
     }
 
-    /* Am Anfang */
     if (index == 0) {
-        list_push(list, value);
-        return 1;
+        return list_push(list, value);
     }
 
-    /* Am Ende */
     if (index == list->size) {
-        list_append(list, value);
-        return 1;
+        return list_append(list, value);
     }
 
-    Node *new_node = malloc(sizeof(Node));
+    Node *new_node = malloc(sizeof *new_node);
 
     if (new_node == NULL) {
         return 0;
@@ -144,7 +137,7 @@ int list_insert(List *list, size_t index, double value)
 
     Node *current = list->head;
 
-    for (size_t i = 0; i < index - 1; i++) {
+    for (int i = 0; i < index - 1; i++) {
         current = current->next;
     }
 
@@ -153,24 +146,22 @@ int list_insert(List *list, size_t index, double value)
     current->next = new_node;
 
     list->size++;
-
     return 1;
 }
 
-int list_remove(List *list, size_t index, double *value)
+int list_remove(List *list, int index, double *value)
 {
-    if (index >= list->size || list->head == NULL) {
+    if (index < 0 || index >= list->size) {
         return 0;
     }
 
-    /* Erstes Element */
     if (index == 0) {
         return list_pop(list, value);
     }
 
     Node *current = list->head;
 
-    for (size_t i = 0; i < index - 1; i++) {
+    for (int i = 0; i < index - 1; i++) {
         current = current->next;
     }
 
@@ -192,24 +183,23 @@ int list_remove(List *list, size_t index, double *value)
     return 1;
 }
 
-int list_get(const List *list, size_t index, double *value)
+int list_get(const List *list, int index, double *value)
 {
-    if (index >= list->size || value == NULL) {
+    if (index < 0 || index >= list->size || value == NULL) {
         return 0;
     }
 
     Node *current = list->head;
 
-    for (size_t i = 0; i < index; i++) {
+    for (int i = 0; i < index; i++) {
         current = current->next;
     }
 
     *value = current->data;
-
     return 1;
 }
 
-size_t list_size(const List *list)
+int list_size(const List *list)
 {
     return list->size;
 }
@@ -225,11 +215,10 @@ void list_clear(List *list)
 
     while (current != NULL) {
         Node *next = current->next;
-
         free(current);
-
         current = next;
     }
+
     list->head = NULL;
     list->tail = NULL;
     list->size = 0;
@@ -242,7 +231,7 @@ void list_print(const List *list)
     printf("[");
 
     while (current != NULL) {
-        printf("%lf", current->data);
+        printf("%g", current->data);
 
         if (current->next != NULL) {
             printf(" -> ");

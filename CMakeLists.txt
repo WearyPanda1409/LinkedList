@@ -3,9 +3,8 @@ project(LinkedList C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(untitled main.c
-        list.c
-        list.h
-        doublelinkedlist.c
-        doublelinkedlist.h
+add_executable(untitled LinkedList/main.c
+        LinkedList/list.c
+        LinkedList/list.h
+        Hex8/main.c
 )
