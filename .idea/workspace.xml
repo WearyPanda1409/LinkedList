@@ -28,16 +28,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b480122-6802-4378-91ec-5af5aeff9e53" name="Changes" comment="int-&gt;double (im Listenelement)">
-      <change afterPath="$PROJECT_DIR$/LinkedList/list.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkedList/main.c" afterDir="false" />
+    <list default="true" id="2b480122-6802-4378-91ec-5af5aeff9e53" name="Changes" comment="hex8 machen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doublelinkedlist.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doublelinkedlist.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/list.c" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedList/list.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/list.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hex8/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Hex8/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +118,7 @@
       <recent name="C:\Users\elias\CLionProjects\untitled" />
     </key>
   </component>
-  <component name="RunManager" selected="C/C++ File.hex8.c (1)">
+  <component name="RunManager" selected="CMake Application.untitled">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
@@ -229,7 +222,8 @@
     <MESSAGE value="idea entfernt durch ignore" />
     <MESSAGE value="idea entfernt durch ignore 2" />
     <MESSAGE value="int-&gt;double" />
-    <option name="LAST_COMMIT_MESSAGE" value="int-&gt;double" />
+    <MESSAGE value="hex8 machen" />
+    <option name="LAST_COMMIT_MESSAGE" value="hex8 machen" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
