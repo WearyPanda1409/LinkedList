@@ -166,7 +166,7 @@ int main(void)
         if (wahl >= 3 && wahl <= 12 && wahl != 13)
         {
             printf("\nNeues A Hex: %04X\n", A);
-            printf("Neues A Bit: ");
+            printf("Neues A Bits: ");
             bits(A);
             printf("\n");
         }

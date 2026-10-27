@@ -1,37 +1,40 @@
-#ifndef LIST_H
-#define LIST_H
+#ifndef LINKED_LIST_H
+#define LINKED_LIST_H
+
+#include <stdbool.h>
+#include <stddef.h>
 
 typedef struct Node {
-    double data;
+    int value;
     struct Node *next;
 } Node;
 
 typedef struct {
     Node *head;
-    Node *tail;
-    int size;
-} List;
+    size_t size;
+} LinkedList;
 
-/* Initialisierung */
-void list_init(List *list);
+/* Initialisiert eine leere Liste. */
+void list_init(LinkedList *list);
 
-/* Elemente hinzufügen */
-int list_push(List *list, double value);
-int list_append(List *list, double value);
+/* Fuegt einen Wert vorne bzw. hinten ein. Gibt false bei einem Fehler zurueck. */
+bool list_push_front(LinkedList *list, int value);
+bool list_push_back(LinkedList *list, int value);
 
-/* Elemente entfernen */
-int list_pop(List *list, double *value);
-int list_pop_back(List *list, double *value);
+/* Entfernt das erste Vorkommen von value. Gibt true zurueck, wenn es gefunden wurde. */
+bool list_remove(LinkedList *list, int value);
 
-/* Elemente an einer Position bearbeiten */
-int list_insert(List *list, int index, double value);
-int list_remove(List *list, int index, double *value);
-int list_get(const List *list, int index, double *value);
+/* Prueft, ob value in der Liste vorkommt. */
+bool list_contains(const LinkedList *list, int value);
 
-/* Informationen und Verwaltung */
-int list_size(const List *list);
-int list_is_empty(const List *list);
-void list_clear(List *list);
-void list_print(const List *list);
+/* Gibt die Liste auf stdout aus. */
+void list_print(const LinkedList *list);
 
-#endif
+/* Liefert Anzahl der Elemente bzw. true, wenn die Liste leer ist. */
+size_t list_size(const LinkedList *list);
+bool list_is_empty(const LinkedList *list);
+
+/* Gibt alle Listenknoten frei und setzt die Liste zurueck. */
+void list_clear(LinkedList *list);
+
+#endif /* LINKED_LIST_H */
