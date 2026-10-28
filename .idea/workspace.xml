@@ -26,11 +26,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b480122-6802-4378-91ec-5af5aeff9e53" name="Changes" comment="hex8 überarbeitet">
+    <list default="true" id="2b480122-6802-4378-91ec-5af5aeff9e53" name="Changes" comment="linkedlist überarbeitet">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hex8/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Hex8/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkedList/CMakeLists.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/LinkedList/list.c" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedList/list.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinkedList/list.h" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedList/list.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LinkedList/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedList/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,6 +86,7 @@
   &quot;keyToString&quot;: {
     &quot;C/C++ File.hex8.c (1).executor&quot;: &quot;Run&quot;,
     &quot;C/C++ File.hex8.c.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ File.main.c (1).executor&quot;: &quot;Run&quot;,
     &quot;C/C++ File.main.c.executor&quot;: &quot;Run&quot;,
     &quot;CMake Application.untitled.executor&quot;: &quot;Run&quot;,
     &quot;CMake Debug.LinkedList.executor&quot;: &quot;Debug&quot;,
@@ -119,13 +120,22 @@
       <recent name="C:\Users\elias\CLionProjects\untitled" />
     </key>
   </component>
-  <component name="RunManager" selected="C/C++ File.main.c (1)">
+  <component name="RunManager" selected="C/C++ File.hex8.c (1)">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LinkedList" type="CMakeListConfigurationType" factoryName="CMakeListConfigurationFactory" temporary="true">
       <method v="2" />
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="LinkedList" type="CMakeListConfigurationType" factoryName="CMakeListConfigurationFactory" temporary="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="hex8.c (1)" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinkedList" TARGET_NAME="hex8.c" CONFIG_NAME="hex8.c">
+      <option name="sourceFile" value="Hex8\main.c" />
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="hex8.c (1)" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinkedList" TARGET_NAME="hex8.c" CONFIG_NAME="hex8.c">
@@ -140,8 +150,26 @@
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="hex8.c" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinkedList" TARGET_NAME="hex8.c" CONFIG_NAME="hex8.c">
+      <option name="sourceFile" value="hex8.c" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="main.c (1)" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="untitled" TARGET_NAME="main.c" CONFIG_NAME="main.c">
       <option name="sourceFile" value="LinkedList\main.c" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main.c (1)" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="untitled" TARGET_NAME="main.c" CONFIG_NAME="main.c">
+      <option name="sourceFile" value="LinkedList\main.c" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main.c" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="untitled" TARGET_NAME="main.c" CONFIG_NAME="main.c">
+      <option name="sourceFile" value="main.c" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
@@ -161,8 +189,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="C/C++ File.main.c (1)" />
         <item itemvalue="C/C++ File.hex8.c (1)" />
+        <item itemvalue="C/C++ File.main.c (1)" />
         <item itemvalue="C/C++ File.hex8.c" />
         <item itemvalue="CMake Debug.LinkedList" />
         <item itemvalue="C/C++ File.main.c" />
@@ -171,6 +199,12 @@
   </component>
   <component name="SelectedDebugProfileService">{
   &quot;profileIdByStamp&quot;: [
+    {
+      &quot;first&quot;: {
+        &quot;##RUN_CONFIGURATION##&quot;: &quot;C/C++ File.main.c (1)&quot;
+      },
+      &quot;second&quot;: &quot;e14011d5-6bcc-4691-b132-28e87f4ecde7&quot;
+    },
     {
       &quot;first&quot;: {
         &quot;##RUN_CONFIGURATION##&quot;: &quot;C/C++ File.main.c&quot;
@@ -185,19 +219,12 @@
     },
     {
       &quot;first&quot;: {
-        &quot;##RUN_CONFIGURATION##&quot;: &quot;CMake Application.untitled&quot;,
-        &quot;cmake&quot;: &quot;CMakeBuildProfile:Debug&quot;
-      },
-      &quot;second&quot;: &quot;e14011d5-6bcc-4691-b132-28e87f4ecde7&quot;
-    },
-    {
-      &quot;first&quot;: {
         &quot;##RUN_CONFIGURATION##&quot;: &quot;C/C++ File.hex8.c (1)&quot;
       },
       &quot;second&quot;: &quot;e14011d5-6bcc-4691-b132-28e87f4ecde7&quot;
     }
   ],
-  &quot;modificationCount&quot;: 12
+  &quot;modificationCount&quot;: 14
 }</component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -218,6 +245,17 @@
     <isAutomaticReloadCMake value="true" />
     <isAutomaticBootstrapAfterUpdate value="false" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1st commit" />
     <MESSAGE value="added commentar" />
@@ -227,7 +265,19 @@
     <MESSAGE value="int-&gt;double" />
     <MESSAGE value="hex8 machen" />
     <MESSAGE value="hex8 überarbeitet" />
-    <option name="LAST_COMMIT_MESSAGE" value="hex8 überarbeitet" />
+    <MESSAGE value="linkedlist überarbeitet" />
+    <option name="LAST_COMMIT_MESSAGE" value="linkedlist überarbeitet" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/LinkedList/main.c</url>
+          <line>4</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

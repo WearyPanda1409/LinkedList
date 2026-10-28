@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void list_init(LinkedList *list) {
+void ll_init(LinkedList *list) {
     if (list == NULL) {
         return;
     }
@@ -12,7 +12,7 @@ void list_init(LinkedList *list) {
     list->size = 0;
 }
 
-bool list_push_front(LinkedList *list, int value) {
+bool ll_push_front(LinkedList *list, double value) {
     if (list == NULL) {
         return false;
     }
@@ -29,7 +29,7 @@ bool list_push_front(LinkedList *list, int value) {
     return true;
 }
 
-bool list_push_back(LinkedList *list, int value) {
+bool ll_push_back(LinkedList *list, double value) {
     if (list == NULL) {
         return false;
     }
@@ -56,7 +56,7 @@ bool list_push_back(LinkedList *list, int value) {
     return true;
 }
 
-bool list_remove(LinkedList *list, int value) {
+bool ll_remove(LinkedList *list, double value) {
     if (list == NULL) {
         return false;
     }
@@ -84,13 +84,50 @@ bool list_remove(LinkedList *list, int value) {
     return false;
 }
 
-bool list_contains(const LinkedList *list, int value) {
+bool ll_contains(const LinkedList *list, double value) {
     if (list == NULL) {
         return false;
     }
 
     const Node *current = list->head;
+
     while (current != NULL) {
         if (current->value == value) {
             return true;
         }
+
+        current = current->next;
+    }
+
+    return false;
+}
+void ll_print(const LinkedList *list) {
+    const Node *current = list->head;
+
+    while (current != NULL) {
+        printf("%g ", current->value);
+        current = current->next;
+    }
+
+    printf("\n");
+}
+void ll_clear(LinkedList *list) {
+    Node *current = list->head;
+
+    while (current != NULL) {
+        Node *next = current->next;
+        free(current);
+        current = next;
+    }
+
+    list->head = NULL;
+    list->size = 0;
+}
+
+uint64_t ll_size(const LinkedList *list) {
+    return list->size;
+}
+
+bool ll_is_empty(const LinkedList *list) {
+    return list->head == NULL;
+}
